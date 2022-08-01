@@ -325,7 +325,7 @@
     overflow: visible;
 }
 
-#CurrencyCard{
+.CurrencyCard{
 
     left: 85px;
     top: 10px;
@@ -343,7 +343,37 @@
     font-weight: bold;
 }
 
-#DayChangeCard {
+.PriceCard {
+    left: 18px;
+    top: 50px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+.RankCard {
+    left: 18px;
+    top: 80px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+.DayChangeCard {
     left: 18px;
     top: 110px;
     position: absolute;
@@ -469,35 +499,7 @@
   
 }
 
-#PriceCard {
-    left: 18px;
-    top: 50px;
-    position: absolute;
-    overflow: visible;
-    width: 123px;
-    height: 22px;
-    text-align: left;
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
 
-#RankCard {
-    left: 18px;
-    top: 80px;
-    position: absolute;
-    overflow: visible;
-    width: 123px;
-    height: 22px;
-    text-align: left;
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
 
 #CurrencyResults {
     left: 915px;

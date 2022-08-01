@@ -54,19 +54,19 @@ let parsedSearch = searchResNum.map(function(value){
 
 function appendBuy(){
 
-let cardsArray1 = [document.querySelectorAll('.buy1',), document.getElementById('.buy1', '#PriceCard'), document.getElementById('.buy1', '#RankCard'), document.getElementById('.buy1', '#DayChangeCard')]
+let cardsArray1 = [document.getElementById('Currency1'), document.getElementById('Buy1.2'), document.getElementById('Buy1.3'), document.getElementById('Buy1.4')]
 // let cardsArray2 = [document.getElementById('Currency_b'), document.getElementById('Price_cy'), document.getElementById('Rank_df'), document.getElementById('Day_Change_ch')]
 // let cardsArray3 = [document.getElementById('Currency_ca'), document.getElementById('Price_cy'), document.getElementById('Rank_df'), document.getElementById('Day_Change_ci')]
 // let cardsArray4 = [document.getElementById('Currency_cb'), document.getElementById('Price_cy'), document.getElementById('Rank_df'), document.getElementById('Day_Change_cj')]
 console.log(cardsArray1)
 
-    if(cardsArray1[0].innerText === 0){
+    // if(cardsArray1[0].innerText == ''){
 
     cardsArray1[0].innerText = searchResStr[0]
-    cardsArray1[1].innerText = `Price $${(parsedSearch[0])}`
+    cardsArray1[1].innerText = `Price $${parsedSearch[0]}`
     cardsArray1[2].innerText = `Rank #${parsedSearch[1]}`
-    cardsArray1[3].innerText = `Day Change 📈 ${(parsedSearch[2])}%`
-}
+    cardsArray1[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
+// }
 //     else if (cardsArray2[0].innerText === ''){
 //         cardsArray2[0].innerText = parsedSearch.Currency
 //         cardsArray2[1].innerText = `Price $${Math.floor(parsedSearch.Price)}`
