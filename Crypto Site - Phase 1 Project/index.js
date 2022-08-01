@@ -37,56 +37,32 @@ let parsedSearch = searchResNum.map(function(value){
     let grabBuy = document.getElementById('BuyButton')
     grabBuy.addEventListener('click', appendBuy)
 
-
-// // function appendBuy(){
-
-// //     let buyCards = [document.getElementById('buy1'), document.getElementById('buy2'), document.getElementById('buy3'), document.getElementById('buy4')]
-
-// let buyInner = '<span id="CurrencyCard">`${}`</span> \
-// <span id="PriceCard">`Price $${}`</span> \
-// <span id="RankCard">`Rank #${}`</span> \
-// <span id="DayChangeCard">`Day Change ${}`</span>'
-
-
-
-
-
-
 function appendBuy(){
 
-let cardsArray1 = [document.getElementById('Currency1'), document.getElementById('Buy1.2'), document.getElementById('Buy1.3'), document.getElementById('Buy1.4')]
-// let cardsArray2 = [document.getElementById('Currency_b'), document.getElementById('Price_cy'), document.getElementById('Rank_df'), document.getElementById('Day_Change_ch')]
-// let cardsArray3 = [document.getElementById('Currency_ca'), document.getElementById('Price_cy'), document.getElementById('Rank_df'), document.getElementById('Day_Change_ci')]
-// let cardsArray4 = [document.getElementById('Currency_cb'), document.getElementById('Price_cy'), document.getElementById('Rank_df'), document.getElementById('Day_Change_cj')]
-console.log(cardsArray1)
-
-    // if(cardsArray1[0].innerText == ''){
+let cardsArray1 = [document.getElementById('Currency1'), document.getElementById('Price1'), document.getElementById('Rank1'), document.getElementById('DayChange1')]
+let cardsArray2 = [document.getElementById('Currency1.1'), document.getElementById('Price1.1'), document.getElementById('Rank1.1'), document.getElementById('DayChange1.1')]
+let cardsArray3 = [document.getElementById('Currency1.2'), document.getElementById('Price1.2'), document.getElementById('Rank1.2'), document.getElementById('DayChange1.2')]
+    if(cardsArray1[0].innerText == 0){
 
     cardsArray1[0].innerText = searchResStr[0]
     cardsArray1[1].innerText = `Price $${parsedSearch[0]}`
     cardsArray1[2].innerText = `Rank #${parsedSearch[1]}`
     cardsArray1[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
-// }
-//     else if (cardsArray2[0].innerText === ''){
-//         cardsArray2[0].innerText = parsedSearch.Currency
-//         cardsArray2[1].innerText = `Price $${Math.floor(parsedSearch.Price)}`
-//         cardsArray2[2].innerText = `Rank #${parsedSearch.Rank}`
-//         cardsArray2[3].innerText = `Day Change 📈 ${Math.floor(parsedSearch.DayChange)}%`
+}
+    if (cardsArray2[0].innerText == 0){
+        cardsArray2[0].innerText = searchResStr[0]
+        cardsArray2[1].innerText = `Price $${parsedSearch[0]}`
+        cardsArray2[2].innerText = `Rank #${parsedSearch[1]}`
+        cardsArray2[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
 
-// }
+}
 
-// else if (cardsArray3[0].innerText === ''){
-//     cardsArray3[0].innerText = parsedSearch.Currency
-//     cardsArray3[1].innerText = `Price $${Math.floor(parsedSearch.Price)}`
-//     cardsArray3[2].innerText = `Rank #${parsedSearch.Rank}`
-//     cardsArray3[3].innerText = `Day Change 📈 ${Math.floor(parsedSearch.DayChange)}%`
-// }
-
-// else if (cardsArray4[0].innerText === ''){
-//     cardsArray4[0].innerText = parsedSearch.Currency
-//     cardsArray4[1].innerText = `Price $${Math.floor(parsedSearch.Price)}`
-//     cardsArray4[2].innerText = `Rank #${parsedSearch.Rank}`
-//     cardsArray4[3].innerText = `Day Change 📈 ${Math.floor(parsedSearch.DayChange)}%`
+else {
+    cardsArray3[0].innerText = searchResStr[0]
+    cardsArray3[1].innerText = `Price $${parsedSearch[0]}`
+    cardsArray3[2].innerText = `Rank #${parsedSearch[1]}`
+    cardsArray3[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
+}
 }
 }
 }
