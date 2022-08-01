@@ -78,7 +78,7 @@
     overflow: visible;
     
 }
-#Rectangle_4 {
+#BuyButton {
     fill: rgba(255,255,255,1);
     stroke: rgba(0,0,0,1);
     stroke-width: 3px;
@@ -547,11 +547,11 @@
 }
 
 #DayChangeResults {
-    left: 1150px;
+    left: 1100px;
     top: 250px;
     position: absolute;
     overflow: visible;
-    width: 123px;
+    width: 170px;
     height: 22px;
     text-align: left;
     font-family: Avenir;
