@@ -36,20 +36,27 @@ let parsedSearch = searchResNum.map(function(value){
 
     let grabBuy = document.getElementById('BuyButton')
     grabBuy.addEventListener('click', appendBuy)
+    let grabSell = document.getElementById('SellButton')
+    grabSell.addEventListener('click', appendSell)
 
 function appendBuy(){
+    
 
 let cardsArray1 = [document.getElementById('Currency1'), document.getElementById('Price1'), document.getElementById('Rank1'), document.getElementById('DayChange1')]
 let cardsArray2 = [document.getElementById('Currency1.1'), document.getElementById('Price1.1'), document.getElementById('Rank1.1'), document.getElementById('DayChange1.1')]
 let cardsArray3 = [document.getElementById('Currency1.2'), document.getElementById('Price1.2'), document.getElementById('Rank1.2'), document.getElementById('DayChange1.2')]
-    if(cardsArray1[0].innerText == 0){
+   
+// console.log(cardsArray1[0].innerText)
+
+if(cardsArray1[0].childNodes.length === 0){
 
     cardsArray1[0].innerText = searchResStr[0]
     cardsArray1[1].innerText = `Price $${parsedSearch[0]}`
     cardsArray1[2].innerText = `Rank #${parsedSearch[1]}`
     cardsArray1[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
 }
-    if (cardsArray2[0].innerText == 0){
+
+    else if (cardsArray2[0].childNodes.length === 0){
         cardsArray2[0].innerText = searchResStr[0]
         cardsArray2[1].innerText = `Price $${parsedSearch[0]}`
         cardsArray2[2].innerText = `Rank #${parsedSearch[1]}`
@@ -57,12 +64,45 @@ let cardsArray3 = [document.getElementById('Currency1.2'), document.getElementBy
 
 }
 
-else {
+else if (cardsArray3[0].childNodes.length === 0){
     cardsArray3[0].innerText = searchResStr[0]
     cardsArray3[1].innerText = `Price $${parsedSearch[0]}`
     cardsArray3[2].innerText = `Rank #${parsedSearch[1]}`
     cardsArray3[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
 }
+}
+
+function appendSell(){
+    
+
+    let cardsArray1 = [document.getElementById('Currency2'), document.getElementById('Price2'), document.getElementById('Rank2'), document.getElementById('DayChange2')]
+    let cardsArray2 = [document.getElementById('Currency2.1'), document.getElementById('Price2.1'), document.getElementById('Rank2.1'), document.getElementById('DayChange2.1')]
+    let cardsArray3 = [document.getElementById('Currency2.2'), document.getElementById('Price2.2'), document.getElementById('Rank2.2'), document.getElementById('DayChange2.2')]
+       
+    // console.log(cardsArray1[0].innerText)
+    
+    if(cardsArray1[0].childNodes.length === 0){
+    
+        cardsArray1[0].innerText = searchResStr[0]
+        cardsArray1[1].innerText = `Price $${parsedSearch[0]}`
+        cardsArray1[2].innerText = `Rank #${parsedSearch[1]}`
+        cardsArray1[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
+    }
+    
+        else if (cardsArray2[0].childNodes.length === 0){
+            cardsArray2[0].innerText = searchResStr[0]
+            cardsArray2[1].innerText = `Price $${parsedSearch[0]}`
+            cardsArray2[2].innerText = `Rank #${parsedSearch[1]}`
+            cardsArray2[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
+    
+    }
+    
+    else if (cardsArray3[0].childNodes.length === 0){
+        cardsArray3[0].innerText = searchResStr[0]
+        cardsArray3[1].innerText = `Price $${parsedSearch[0]}`
+        cardsArray3[2].innerText = `Rank #${parsedSearch[1]}`
+        cardsArray3[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
+    }
 }
 }
 }
