@@ -7,7 +7,9 @@ search.addEventListener('keypress', function(e){
    
 function submitSearch(e){
     // e.preventDefault()
-    let searchTerm = document.getElementById('searchInput').value
+    // let searchTerm = document.getElementById('searchInput').value
+    let searchTerm = e.target.value
+    
 fetch(`https://api.coincap.io/v2/assets/${searchTerm.toLowerCase()}`)
 .then(response => response.json())
 .then(data => searchAppend(data))
@@ -79,9 +81,11 @@ function appendSell(){
     let cardsArray2 = [document.getElementById('Currency2.1'), document.getElementById('Price2.1'), document.getElementById('Rank2.1'), document.getElementById('DayChange2.1')]
     let cardsArray3 = [document.getElementById('Currency2.2'), document.getElementById('Price2.2'), document.getElementById('Rank2.2'), document.getElementById('DayChange2.2')]
        
-    // console.log(cardsArray1[0].innerText)
+    console.log('Price 2.1:', document.getElementById('Price2.1').innerText)
+    console.log('This is e value:', e.target.value)
+    console.log('This is results:', document.getElementById('CurrencyResults'))
     
-    if(cardsArray1[0].childNodes.length === 0){
+    if(document.getElementById('Price2').innerText === ''){
     
         cardsArray1[0].innerText = searchResStr[0]
         cardsArray1[1].innerText = `Price $${parsedSearch[0]}`
@@ -89,7 +93,7 @@ function appendSell(){
         cardsArray1[3].innerText = `Day Change 📈 ${parsedSearch[2]}%`
     }
     
-        else if (cardsArray2[0].childNodes.length === 0){
+        else if (document.getElementById('Price2.1').innerText === ''){
             cardsArray2[0].innerText = searchResStr[0]
             cardsArray2[1].innerText = `Price $${parsedSearch[0]}`
             cardsArray2[2].innerText = `Rank #${parsedSearch[1]}`
@@ -97,7 +101,7 @@ function appendSell(){
     
     }
     
-    else if (cardsArray3[0].childNodes.length === 0){
+    else if (document.getElementById('Price2.2').innerText === ''){
         cardsArray3[0].innerText = searchResStr[0]
         cardsArray3[1].innerText = `Price $${parsedSearch[0]}`
         cardsArray3[2].innerText = `Rank #${parsedSearch[1]}`
