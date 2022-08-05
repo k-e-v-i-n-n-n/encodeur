@@ -1,0 +1,702 @@
+.mediaViewInfo {
+    --web-view-name: Web 1920 – 1;
+    --web-view-id: Web_1920__1;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Web_1920__1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Web_1920__1 {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Web 1920 – 1;
+    --web-view-id: Web_1920__1;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    width: 652px;
+    height: 111px;
+    left: 634px;
+    top: 30px;
+}
+#CRYPTOCURRENCY_ {
+    left: 671px;
+    top: 31px;
+    position: absolute;
+    overflow: visible;
+    width: 581px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 61px;
+    color: rgba(0,0,0,1);
+}
+#A_daily_crypto_organizer {
+    left: 846px;
+    top: 105px;
+    position: absolute;
+    overflow: visible;
+    width: 230px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(90,90,90,1);
+}
+#BUTTONS {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    left: 731px;
+    top: 298px;
+    overflow: visible;
+    
+}
+#BuyButton {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4 {
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+#BUTTONS_l {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    left: 849px;
+    top: 298px;
+    overflow: visible;
+}
+#SellButton{
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4_m {
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+#BUTTONS_n {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    left: 967px;
+    top: 298px;
+    overflow: visible;
+}
+#HoldButton {
+    fill: rgb(0, 0, 0);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4_o {
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+.BUTTONS{
+
+    background-color: black;
+}
+#BUTTONS_p {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    left: 1085px;
+    top: 298px;
+    overflow: visible;
+}
+#HoldButton {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4_q {
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+#searchInput {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 14px;
+  border-radius: 2px;
+  
+}
+.Rectangle_5 {
+    position: absolute;
+    overflow: visible;
+    width: 652px;
+    height: 33px;
+    left: 634px;
+    top: 154px;
+    
+}
+#Rectangle_6 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_6 {
+    position: absolute;
+    overflow: visible;
+    width: 652px;
+    height: 91px;
+    left: 634px;
+    top: 197px;
+}
+#COLUMNS {
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 320px;
+    height: 619px;
+    left: 314px;
+    top: 426px;
+    overflow: visible;
+}
+#Rectangle_7 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7 {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 619px;
+    left: 0px;
+    top: 0px;
+}
+#COLUMNS_v {
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 320px;
+    height: 619px;
+    left: 650px;
+    top: 426px;
+    overflow: visible;
+}
+#Rectangle_7_w {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7_w {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 619px;
+    left: 0px;
+    top: 0px;
+}
+#COLUMNS_x {
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 320px;
+    height: 619px;
+    left: 986px;
+    top: 426px;
+    overflow: visible;
+}
+#Rectangle_7_y {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7_y {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 619px;
+    left: 0px;
+    top: 0px;
+}
+#COLUMNS_z {
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 320px;
+    height: 619px;
+    left: 1322px;
+    top: 426px;
+    overflow: visible;
+}
+#Rectangle_7_ {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7_ {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 619px;
+    left: 0px;
+    top: 0px;
+}
+.Cards {
+    position: relative;
+    width: 281px;
+    height: 141px;
+    outline: 2px solid black;
+    overflow: visible;
+}
+
+.CurrencyCard{
+
+    left: 85px;
+    top: 10px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    font-weight: bold;
+}
+
+.PriceCard {
+    left: 18px;
+    top: 50px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+.RankCard {
+    left: 18px;
+    top: 80px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+.DayChangeCard {
+    left: 18px;
+    top: 110px;
+    position: absolute;
+    overflow: visible;
+    width: 170px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+
+#buy1 {
+
+    position: relative;
+    left: 334px;
+    top: 444px;
+
+}
+
+#buy2 {
+
+    position: absolute;
+    left: 334px;
+    top: 592px;
+}
+
+#buy3 {
+    position: absolute;
+    left: 334px;
+    top: 742px;
+
+    
+}
+
+#buy4 {
+
+    position: absolute;
+    left: 334px;
+    top: 890px;
+}
+
+#sell1 {
+   
+    position: absolute;
+    left: 671px;
+    top: 444px;
+}
+
+
+#sell2 {
+    position: absolute;
+    left: 671px;
+    top: 592px;
+
+}
+
+#sell3 {
+    position: absolute;
+    left: 671px;
+    top: 742px;
+}
+
+#sell4 {
+    position: absolute;
+    left: 671px;
+    top: 890px;
+}
+
+
+#hold1 {
+    position: absolute;
+    left: 1005px;
+    top: 444px;
+}
+
+#hold2 {
+    position: absolute;
+    left: 1005px;
+    top: 592px;
+
+}
+
+#hold3 {
+    position: absolute;
+    left: 1005px;
+    top: 742px;
+    
+}
+
+#hold4 {
+    position: absolute;
+    left: 1005px;
+    top: 890px;
+   
+}
+
+#watch1 {
+   
+    position: absolute;
+    left: 1342px;
+    top: 444px;
+}
+#watch2 {
+    position: absolute;
+    left: 1342px;
+    top: 592px;
+}
+#watch3 {
+    position: absolute;
+   
+    left: 1342px;
+    top: 742px;
+    
+}
+#watch4 {
+    position: absolute;
+    left: 1342px;
+    top: 890px;
+  
+}
+
+
+
+#CurrencyResults {
+    left: 915px;
+    top: 202px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#PriceResults {
+    left: 690px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#RankResults {
+    left: 940px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+#DayChangeResults {
+    left: 1100px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 170px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+
+#Rectangle_9 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_9 {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 45px;
+    left: 314px;
+    top: 372px;
+}
+#Rectangle_10 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_10 {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 45px;
+    left: 648px;
+    top: 373px;
+}
+#Rectangle_11 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_11 {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 45px;
+    left: 1322px;
+    top: 372px;
+}
+#Rectangle_12 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_12 {
+    position: absolute;
+    overflow: visible;
+    width: 320px;
+    height: 45px;
+    left: 986px;
+    top: 373px;
+}
+#Buy {
+    left: 456px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 29px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Sell {
+    left: 786px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 28px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Hold {
+    left: 1132px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Watch {
+    left: 1477px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 48px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+#deleteBtn{
+
+    left: 250px;
+    top: 110px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border: 1px solid black;
+
+   
+}
