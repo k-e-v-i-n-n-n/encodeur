@@ -4,13 +4,15 @@ const resultName = document.getElementById('CurrencyResults')
 const resultPrice = document.getElementById('PriceResults')
 const resultRank = document.getElementById('RankResults')
 const resultChange = document.getElementById('DayChangeResults')
+const grabSell = document.getElementById('SellButton')
+const grabHold = document.getElementById('HoldButton')
+const grabWatch = document.getElementById('WatchButton')
 
 search.addEventListener('keypress', function(e){
     if (e.key === 'Enter'){
         submitSearch(e)
     }
 })
-
 
    
 function submitSearch(e){
@@ -46,84 +48,77 @@ function searchAppend(coin){
 
     let cardMain = document.createElement('div');
     cardMain.innerHTML += cardInner
-    // let cardClone = [cardCloneBuy = cardMain.cloneNode(true), cardCloneSell = cardMain.cloneNode(true), cardCloneHold = cardMain.cloneNode(true), cardCloneWatch = cardMain.cloneNode(true)]
 
-
-    // let grabBuy = document.getElementById('BuyButton')
     grabBuy.addEventListener('click', appendBuy)
-    let grabSell = document.getElementById('SellButton')
-    grabSell.addEventListener('click', function() {appendSell(cardCloneSell)})
-    let grabHold = document.getElementById('HoldButton')
-    grabHold.addEventListener('click', function() {appendHold(cardCloneHold)})
-    let grabWatch = document.getElementById('WatchButton')
-    grabWatch.addEventListener('click', function() {appendWatch(cardCloneWatch)})
+    grabSell.addEventListener('click', appendSell)
+    grabHold.addEventListener('click', appendHold)
+    grabWatch.addEventListener('click', appendWatch)
 
     
 
-    function appendBuy(cardMain){
+    function appendBuy(){
 
         if (document.getElementById('buy1').innerText === ''){ 
             document.getElementById('buy1').appendChild(cardMain)}
     
         else if (document.getElementById('buy2').innerText === '') { 
-                document.getElementById('buy2').appendChild(cardCloneBuy)}
+                document.getElementById('buy2').appendChild(cardMain)}
                 
                 else if (document.getElementById('buy3').innerText === '') { 
-                    document.getElementById('buy3').appendChild(cardCloneBuy)}
+                    document.getElementById('buy3').appendChild(cardMain)}
                    
                     else { 
-                        document.getElementById('buy4').appendChild(cardCloneBuy)}
+                        document.getElementById('buy4').appendChild(cardMain)}
 
     }
 
-    function appendSell(cardMain){
+    function appendSell(){
         
         if (document.getElementById('sell1').innerText === ''){ 
-            document.getElementById('sell1').appendChild(cardCloneSell)}
+            document.getElementById('sell1').appendChild(cardMain)}
     
         else if (document.getElementById('sell2').innerText === '') { 
-                document.getElementById('sell2').appendChild(cardCloneSell)}
+                document.getElementById('sell2').appendChild(cardMain)}
                 
                 else if (document.getElementById('sell3').innerText === '') { 
-                    document.getElementById('sell3').appendChild(cardCloneSell)}
+                    document.getElementById('sell3').appendChild(cardMain)}
                    
                     else { 
-                        document.getElementById('sell4').appendChild(cardCloneSell)}
+                        document.getElementById('sell4').appendChild(cardMain)}
 
     }
 
-    function appendHold(cardCloneHold){
+    function appendHold(){
 
         if (document.getElementById('hold1').innerText === ''){ 
-            document.getElementById('hold1').appendChild(cardCloneHold)}
+            document.getElementById('hold1').appendChild(cardMain)}
     
         else if (document.getElementById('hold2').innerText === '') { 
-                document.getElementById('hold2').appendChild(cardCloneHold)}
+                document.getElementById('hold2').appendChild(cardMain)}
                 
                 else if (document.getElementById('hold3').innerText === '') { 
-                    document.getElementById('hold3').appendChild(cardCloneHold)}
+                    document.getElementById('hold3').appendChild(cardMain)}
                    
                     else { 
-                        document.getElementById('hold4').appendChild(cardCloneHold)}
+                        document.getElementById('hold4').appendChild(cardMain)}
 
     }
 
-    function appendWatch(cardCloneWatch){
+    function appendWatch(){
          
     
         if (document.getElementById('watch1').innerText === ''){ 
-            document.getElementById('watch1').appendChild(cardCloneWatch)}
+            document.getElementById('watch1').appendChild(cardMain)}
     
         else if (document.getElementById('watch2').innerText === '') { 
-                document.getElementById('watch2').appendChild(cardCloneWatch)}
+                document.getElementById('watch2').appendChild(cardMain)}
                 
                 else if (document.getElementById('watch3').innerText === '') { 
-                    document.getElementById('watch3').appendChild(cardCloneWatch)}
+                    document.getElementById('watch3').appendChild(cardMain)}
                    
-                    // if (document.getElementById('watch4').innerText === '')
 
-                    else { 
-                        document.getElementById('watch4').appendChild(cardCloneWatch)}
+                    else if (document.getElementById('watch4').innerText === ''){ 
+                        document.getElementById('watch4').appendChild(cardMain)}
 
     }
 
