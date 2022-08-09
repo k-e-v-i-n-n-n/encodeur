@@ -23,18 +23,18 @@ const watch1 = document.getElementById('watch1')
 const watch2 = document.getElementById('watch2')
 const watch3 = document.getElementById('watch3')
 const watch4 = document.getElementById('watch4')
+const deleteGrab = document.getElementById('#deleteBtn')
 let resStrArray = []
 let parsedSearchArray = []
+
 search.addEventListener('keypress', function(e){
     if (e.key === 'Enter'){
         submitSearch(e)
     }
 })
 function submitSearch(e){
-        console.log('This is e.target.value', e.target.value)
         e.preventDefault()
     let searchTerm = e.target.value
-    debugger
 fetch(`https://api.coincap.io/v2/assets/${searchTerm.toLowerCase()}`)
 .then(response => response.json())
 .then(coin => searchAppend(coin))
@@ -53,100 +53,81 @@ function searchAppend(coin){
     resStrArray = [searchResStr[0]]
     parsedSearchArray = [parsedSearch[0], parsedSearch[1], parsedSearch[2]]
 }
-    function appendBuy(resStrArray, parsedSearchArray){
-        console.log(resStrArray, parsedSearchArray)
-        let cardInner = `<div class="removable">
-        <div class="CurrencyCard" id="Currency1">${parsedSearchArray[0]}</div>
-        <div class="PriceCard" id="Price1">Price $${resStrArray[0]}</div>
-        <div class="RankCard" id="Rank1">Rank #${Math.floor(resStrArray[1])}</div>
-        <div class="DayChangeCard" id="DayChange1">Day Change ${resStrArray[2]}%</div>
-        <button id='deleteBtn'>x</button>
-        </div>`;
-    let cardMain = document.createElement('div');
-    cardMain.innerHTML = cardInner;
+
+function cardPop(parsedSearch, searchResStr){
+
+    let cardInner = `<div class="removable">
+    <div class="CurrencyCard" id="Currency1">${searchResStr[0]}</div>
+    <div class="PriceCard" id="Price1">Price $${parsedSearch[0]}</div>
+    <div class="RankCard" id="Rank1">Rank #${Math.floor(parsedSearch[1])}</div>
+    <div class="DayChangeCard" id="DayChange1">Day Change ${parsedSearch[2]}%</div>
+    <button id='deleteBtn'>x</button>
+    </div>`;
+
+let cardMain = document.createElement('div');
+cardMain.innerHTML = cardInner;
+
+return cardMain
+
+}
+    function appendBuy(parsedSearch, searchResStr){
+      
         if (buy1.innerText === ''){
-            buy1.appendChild(cardMain)}
+            buy1.appendChild(cardPop(parsedSearch, searchResStr))}
         else if (buy2.innerText === '') {
-                buy2.appendChild(cardMain)}
+                buy2.appendChild(cardPop(parsedSearch, searchResStr))}
                 else if (buy3.innerText === '') {
-                    buy3.appendChild(cardMain)}
+                    buy3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (buy4.innerText === '') {
-                        buy4.appendChild(cardMain)}
+                        buy4.appendChild(cardPop(parsedSearch, searchResStr))}
     }
+
+
     function appendSell(parsedSearch, searchResStr){
-        let cardInner = `<div class="removable">
-        <div class="CurrencyCard" id="Currency1">${searchResStr[0]}</div>
-        <div class="PriceCard" id="Price1">Price $${parsedSearch[0]}</div>
-        <div class="RankCard" id="Rank1">Rank #${Math.floor(parsedSearch[1])}</div>
-        <div class="DayChangeCard" id="DayChange1">Day Change ${parsedSearch[2]}%</div>
-        <button id='deleteBtn'>x</button>
-        </div>`;
-    let cardMain = document.createElement('div');
-    cardMain.innerHTML = cardInner;
+        
         if (sell1.innerText === ''){
-            sell1.appendChild(cardMain)}
+            sell1.appendChild(cardPop(parsedSearch, searchResStr))}
         else if (sell2.innerText === '') {
-            sell2.appendChild(cardMain)}
+            sell2.appendChild(cardPop(parsedSearch, searchResStr))}
                 else if (sell3.innerText === '') {
-                    sell3.appendChild(cardMain)}
+                    sell3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (sell4.innerText === '') {
-                        sell4.appendChild(cardMain)}
+                        sell4.appendChild(cardPop(parsedSearch, searchResStr))}
     }
     function appendHold(parsedSearch, searchResStr){
-        let cardInner = `<div class="removable">
-        <div class="CurrencyCard" id="Currency1">${searchResStr[0]}</div>
-        <div class="PriceCard" id="Price1">Price $${parsedSearch[0]}</div>
-        <div class="RankCard" id="Rank1">Rank #${Math.floor(parsedSearch[1])}</div>
-        <div class="DayChangeCard" id="DayChange1">Day Change ${parsedSearch[2]}%</div>
-        <button id='deleteBtn'>x</button>
-        </div>`;
-    let cardMain = document.createElement('div');
-    cardMain.innerHTML = cardInner;
+    
         if (hold1.innerText === ''){
-            document.getElementById('hold1').appendChild(cardMain)}
+            hold1.appendChild(cardPop(parsedSearch, searchResStr))}
         else if (hold2.innerText === '') {
-                hold2.appendChild(cardMain)}
+                hold2.appendChild(cardPop(parsedSearch, searchResStr))}
                 else if (hold3.innerText === '') {
-                    hold3.appendChild(cardMain)}
+                    hold3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (hold4.innerText === '') {
-                        hold4.appendChild(cardMain)}
+                        hold4.appendChild(cardPop(parsedSearch, searchResStr))}
     }
     function appendWatch(parsedSearch, searchResStr){
-        let cardInner = `<div class="removable">
-        <div class="CurrencyCard" id="Currency1">${searchResStr[0]}</div>
-        <div class="PriceCard" id="Price1">Price $${parsedSearch[0]}</div>
-        <div class="RankCard" id="Rank1">Rank #${Math.floor(parsedSearch[1])}</div>
-        <div class="DayChangeCard" id="DayChange1">Day Change ${parsedSearch[2]}%</div>
-        <button id='deleteBtn'>x</button>
-        </div>`;
-    let cardMain = document.createElement('div');
-    cardMain.innerHTML = cardInner;
+     
         if (watch1.innerText === ''){
-            watch1.appendChild(cardMain)}
+            watch1.appendChild(cardPop(parsedSearch, searchResStr))}
         else if (watch2.innerText === '') {
-                watch2.appendChild(cardMain)}
+                watch2.appendChild(cardPop(parsedSearch, searchResStr))}
                 else if (watch3.innerText === '') {
-                    watch3.appendChild(cardMain)}
+                    watch3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (watch4.innerText === ''){
-                        watch4.appendChild(cardMain)}
+                        watch4.appendChild(cardPop(parsedSearch, searchResStr))}
+
+
     }
+
+    function deleteDiv(){
+
+        deleteGrab.closest('.removable').remove();
+    }
+
     grabBuy.addEventListener('click', () => appendBuy(parsedSearchArray, resStrArray))
     grabSell.addEventListener('click', () => appendSell(parsedSearchArray, resStrArray))
     grabHold.addEventListener('click', () => appendHold(parsedSearchArray, resStrArray))
     grabWatch.addEventListener('click', () => appendWatch(parsedSearchArray, resStrArray))
+    deleteGrab.addEventListener('click', deleteDiv)
 
-
-
-    // function buttonFunc(cardMain){
-// }
-//    let deleteBtn = document.querySelectorAll('#deleteBtn')
-// for (let i = 0 ; i < deleteBtn.length; i++){
-//     deleteBtn[i].addEventListener('click', deleteDiv(e, deleteBtn[i]))
-// }
-// function deleteDiv(e, deleteBtn){
-//     console.log(e)
-// // let child = document.getElementById('deleteBtn')
-// // let parent = child.closest('.removable')
-// parent = deleteBtn.closest('.removable')
-// parent.remove();
-// }
+  
