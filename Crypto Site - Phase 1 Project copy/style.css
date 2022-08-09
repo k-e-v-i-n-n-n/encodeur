@@ -230,6 +230,11 @@
     stroke-linecap: round;
     stroke-miterlimit: 4;
     shape-rendering: auto;
+
+    width: 320px;
+    height: 619px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 2px;
 }
 .Rectangle_7 {
     position: absolute;
@@ -256,6 +261,11 @@
     stroke-linecap: round;
     stroke-miterlimit: 4;
     shape-rendering: auto;
+
+    width: 320px;
+    height: 619px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 2px;
 }
 .Rectangle_7_w {
     position: absolute;
@@ -282,6 +292,11 @@
     stroke-linecap: round;
     stroke-miterlimit: 4;
     shape-rendering: auto;
+
+    width: 320px;
+    height: 619px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 2px;
 }
 .Rectangle_7_y {
     position: absolute;
@@ -308,6 +323,11 @@
     stroke-linecap: round;
     stroke-miterlimit: 4;
     shape-rendering: auto;
+
+    width: 320px;
+    height: 619px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 2px;
 }
 .Rectangle_7_ {
     position: absolute;
