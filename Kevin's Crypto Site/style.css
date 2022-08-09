@@ -75,14 +75,14 @@
     /* color: white; */
   }
 
-  #buy{
+  #BuyButton{
 
     position: relative;
     /* top: 23px;
     left: 105px; */
     padding: 10px 32px;
 }
-#sell{
+#SellButton{
 
     position: relative;
     /* top: 23px;
@@ -90,7 +90,7 @@
     padding: 10px 32px;
 }
 
-#hold{
+#HoldButton{
 
     position: relative;
     /* top: 23px;
@@ -98,10 +98,338 @@
     padding: 10px 30px;
 }
 
-#watch{
+#WatchButton{
 
     position: relative;
     /* top: 23px;
     left: 195px; */
     padding: 10px 25px;
 }
+
+
+.Cards {
+    position: relative;
+    width: 281px;
+    height: 141px;
+    outline: 2px solid black;
+    overflow: visible;
+}
+
+.CurrencyCard{
+
+    left: 85px;
+    top: 10px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    font-weight: bold;
+}
+
+.PriceCard {
+    left: 18px;
+    top: 50px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+.RankCard {
+    left: 18px;
+    top: 80px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+.DayChangeCard {
+    left: 18px;
+    top: 110px;
+    position: absolute;
+    overflow: visible;
+    width: 170px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+
+#buy1 {
+
+    position: absolute;
+    left: 180px;
+    top: 444px;
+
+}
+
+#buy2 {
+
+    position: absolute;
+    left: 180px;
+    top: 592px;
+}
+
+#buy3 {
+    position: absolute;
+    left: 180px;
+    top: 742px;
+
+    
+}
+
+#buy4 {
+
+    position: absolute;
+    left: 180px;
+    top: 890px;
+}
+
+#sell1 {
+   
+    position: absolute;
+    left: 547px;
+    top: 444px;
+}
+
+
+#sell2 {
+    position: absolute;
+    left: 547px;
+    top: 592px;
+
+}
+
+#sell3 {
+    position: absolute;
+    left: 547px;
+    top: 742px;
+}
+
+#sell4 {
+    position: absolute;
+    left: 547px;
+    top: 890px;
+}
+
+
+#hold1 {
+    position: absolute;
+    left: 881px;
+    top: 444px;
+}
+
+#hold2 {
+    position: absolute;
+    left: 881px;
+    top: 592px;
+
+}
+
+#hold3 {
+    position: absolute;
+    left: 881px;
+    top: 742px;
+    
+}
+
+#hold4 {
+    position: absolute;
+    left: 881px;
+    top: 890px;
+   
+}
+
+#watch1 {
+   
+    position: absolute;
+    left: 1218px;
+    top: 444px;
+}
+#watch2 {
+    position: absolute;
+    left: 1218px;
+    top: 592px;
+}
+#watch3 {
+    position: absolute;
+   
+    left: 1218px;
+    top: 742px;
+    
+}
+#watch4 {
+    position: absolute;
+    left: 1218px;
+    top: 890px;
+  
+}
+
+
+
+#CurrencyResults {
+    left: 915px;
+    top: 202px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#PriceResults {
+    left: 690px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#RankResults {
+    left: 940px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+#DayChangeResults {
+    left: 1100px;
+    top: 250px;
+    position: absolute;
+    overflow: visible;
+    width: 170px;
+    height: 22px;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+
+#Buy {
+    left: 456px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 29px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Sell {
+    left: 786px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 28px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Hold {
+    left: 1132px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Watch {
+    left: 1477px;
+    top: 385px;
+    position: absolute;
+    overflow: visible;
+    width: 48px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+#deleteBtn{
+
+    left: 250px;
+    top: 110px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border: 1px solid black;
+
+   
+}
+
+#COLUMNS {
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 320px;
+    height: 619px;
+    left: 314px;
+    top: 426px;
+    overflow: visible;
+}
+
