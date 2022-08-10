@@ -1,29 +1,11 @@
-/* .mediaViewInfo {
-    --web-view-name: Web 1920 – 1;
-    --web-view-id: Web_1920__1;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-:root {
-    --web-view-ids: Web_1920__1;
-} */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
 }
-/* #Web_1920__1 {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    background-color: rgba(255,255,255,1);
-    overflow: hidden;
-    --web-view-name: Web 1920 – 1;
-    --web-view-id: Web_1920__1;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-} */
+
 #Rectangle_1 {
     fill: rgba(255,255,255,1);
     stroke: rgba(0,0,0,1);
@@ -709,7 +691,7 @@
     color: rgba(0,0,0,1);
 }
 
-#deleteBtn{
+.deleteBtn{
 
     left: 250px;
     top: 110px;

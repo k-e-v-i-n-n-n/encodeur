@@ -23,9 +23,14 @@ const watch1 = document.getElementById('watch1')
 const watch2 = document.getElementById('watch2')
 const watch3 = document.getElementById('watch3')
 const watch4 = document.getElementById('watch4')
-const deleteGrab = document.getElementById('#deleteBtn')
 let resStrArray = []
 let parsedSearchArray = []
+let buttons = document.getElementsByClassName('deleteBtn')
+
+grabBuy.addEventListener('click', () => appendBuy(parsedSearchArray, resStrArray))
+grabSell.addEventListener('click', () => appendSell(parsedSearchArray, resStrArray))
+grabHold.addEventListener('click', () => appendHold(parsedSearchArray, resStrArray))
+grabWatch.addEventListener('click', () => appendWatch(parsedSearchArray, resStrArray))
 
 search.addEventListener('keypress', function(e){
     if (e.key === 'Enter'){
@@ -38,8 +43,9 @@ function submitSearch(e){
 fetch(`https://api.coincap.io/v2/assets/${searchTerm.toLowerCase()}`)
 .then(response => response.json())
 .then(coin => searchAppend(coin))
-.catch((err) => console.log(err))
+.catch((err) => alert('Coin not found...try again.'))
 }
+
 function searchAppend(coin){
     let searchRes = [coin.data.name, coin.data.priceUsd, coin.data.rank, coin.data.changePercent24Hr]
     let searchResNum = searchRes.slice(1)
@@ -61,11 +67,12 @@ function cardPop(parsedSearch, searchResStr){
     <div class="PriceCard" id="Price1">Price $${parsedSearch[0]}</div>
     <div class="RankCard" id="Rank1">Rank #${Math.floor(parsedSearch[1])}</div>
     <div class="DayChangeCard" id="DayChange1">Day Change ${parsedSearch[2]}%</div>
-    <button id='deleteBtn'>x</button>
+    <button class='deleteBtn'>x</button>
     </div>`;
 
 let cardMain = document.createElement('div');
 cardMain.innerHTML = cardInner;
+getDelete()
 
 return cardMain
 
@@ -119,15 +126,19 @@ return cardMain
 
     }
 
-    function deleteDiv(){
+    function getDelete(){
 
-        deleteGrab.closest('.removable').remove();
+        for (btn of buttons){
+            btn.addEventListener('click', deleteDiv)
+        }
     }
 
-    grabBuy.addEventListener('click', () => appendBuy(parsedSearchArray, resStrArray))
-    grabSell.addEventListener('click', () => appendSell(parsedSearchArray, resStrArray))
-    grabHold.addEventListener('click', () => appendHold(parsedSearchArray, resStrArray))
-    grabWatch.addEventListener('click', () => appendWatch(parsedSearchArray, resStrArray))
-    deleteGrab.addEventListener('click', deleteDiv)
+    function deleteDiv(e){
+        e.target.parentNode.remove();
+    }
+
+
+ 
+
 
   
