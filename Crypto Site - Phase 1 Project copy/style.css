@@ -147,9 +147,15 @@
     top: 0px;
 }
 .BUTTONS{
-
-    background-color: black;
+    border: 1px;
+    border-color: black;
+    
 }
+
+  .BUTTONS:hover {
+    background-color: #e5e5e5;
+  }
+
 #BUTTONS_p {
     position: absolute;
     width: 104px;
