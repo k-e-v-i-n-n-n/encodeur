@@ -23,9 +23,10 @@ const watch1 = document.getElementById('watch1')
 const watch2 = document.getElementById('watch2')
 const watch3 = document.getElementById('watch3')
 const watch4 = document.getElementById('watch4')
+const buttons = document.getElementsByClassName('deleteBtn')
 let resStrArray = []
 let parsedSearchArray = []
-let buttons = document.getElementsByClassName('deleteBtn')
+
 
 grabBuy.addEventListener('click', () => appendBuy(parsedSearchArray, resStrArray))
 grabSell.addEventListener('click', () => appendSell(parsedSearchArray, resStrArray))
@@ -79,48 +80,48 @@ return cardMain
 }
     function appendBuy(parsedSearch, searchResStr){
       
-        if (buy1.innerText === ''){
+        if (buy1.innerText === '' && searchResStr[0] != undefined){
             buy1.appendChild(cardPop(parsedSearch, searchResStr))}
-        else if (buy2.innerText === '') {
+        else if (buy2.innerText === '' && searchResStr[0] != undefined) {
                 buy2.appendChild(cardPop(parsedSearch, searchResStr))}
-                else if (buy3.innerText === '') {
+                else if (buy3.innerText === '' && searchResStr[0] != undefined) {
                     buy3.appendChild(cardPop(parsedSearch, searchResStr))}
-                    else if (buy4.innerText === '') {
+                    else if (buy4.innerText === '' && searchResStr[0] != undefined) {
                         buy4.appendChild(cardPop(parsedSearch, searchResStr))}
     }
 
 
     function appendSell(parsedSearch, searchResStr){
         
-        if (sell1.innerText === ''){
+        if (sell1.innerText === '' && searchResStr[0] != undefined){
             sell1.appendChild(cardPop(parsedSearch, searchResStr))}
-        else if (sell2.innerText === '') {
+        else if (sell2.innerText === '' && searchResStr[0] != undefined) {
             sell2.appendChild(cardPop(parsedSearch, searchResStr))}
-                else if (sell3.innerText === '') {
+                else if (sell3.innerText === '' && searchResStr[0] != undefined) {
                     sell3.appendChild(cardPop(parsedSearch, searchResStr))}
-                    else if (sell4.innerText === '') {
+                    else if (sell4.innerText === '' && searchResStr[0] != undefined) {
                         sell4.appendChild(cardPop(parsedSearch, searchResStr))}
     }
     function appendHold(parsedSearch, searchResStr){
     
-        if (hold1.innerText === ''){
+        if (hold1.innerText === '' && searchResStr[0] != undefined){
             hold1.appendChild(cardPop(parsedSearch, searchResStr))}
-        else if (hold2.innerText === '') {
+        else if (hold2.innerText === '' && searchResStr[0] != undefined) {
                 hold2.appendChild(cardPop(parsedSearch, searchResStr))}
-                else if (hold3.innerText === '') {
+                else if (hold3.innerText === '' && searchResStr[0] != undefined) {
                     hold3.appendChild(cardPop(parsedSearch, searchResStr))}
-                    else if (hold4.innerText === '') {
+                    else if (hold4.innerText === '' && searchResStr[0] != undefined) {
                         hold4.appendChild(cardPop(parsedSearch, searchResStr))}
     }
     function appendWatch(parsedSearch, searchResStr){
      
-        if (watch1.innerText === ''){
+        if (watch1.innerText === '' && searchResStr[0] != undefined){
             watch1.appendChild(cardPop(parsedSearch, searchResStr))}
-        else if (watch2.innerText === '') {
+        else if (watch2.innerText === '' && searchResStr[0] != undefined) {
                 watch2.appendChild(cardPop(parsedSearch, searchResStr))}
-                else if (watch3.innerText === '') {
+                else if (watch3.innerText === '' && searchResStr[0] != undefined) {
                     watch3.appendChild(cardPop(parsedSearch, searchResStr))}
-                    else if (watch4.innerText === ''){
+                    else if (watch4.innerText === '' && searchResStr[0] != undefined){
                         watch4.appendChild(cardPop(parsedSearch, searchResStr))}
 
 

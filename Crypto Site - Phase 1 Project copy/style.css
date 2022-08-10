@@ -1,5 +1,5 @@
 .mediaViewInfo {
-    --web-view-name: Web 1920 – 1;
+    /* --web-view-name: Web 1920 – 1; */
     --web-view-id: CRYPTOCURRENCY Organize;
     --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
@@ -186,6 +186,8 @@
     border: 3px solid rgb(0, 0, 0);
     font-size: 14px;
   border-radius: 2px;
+  box-sizing: border-box;
+    padding: 6px;
   
 }
 .Rectangle_5 {
