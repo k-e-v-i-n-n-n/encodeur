@@ -47,6 +47,7 @@ fetch(`https://api.coincap.io/v2/assets/${searchTerm.toLowerCase()}`)
 .catch((err) => alert('Coin not found...try again.'))
 }
 
+
 function searchAppend(coin){
     let searchRes = [coin.data.name, coin.data.priceUsd, coin.data.rank, coin.data.changePercent24Hr]
     let searchResNum = searchRes.slice(1)
@@ -73,7 +74,7 @@ function cardPop(parsedSearch, searchResStr){
 
 let cardMain = document.createElement('div');
 cardMain.innerHTML = cardInner;
-getDelete()
+
 
 return cardMain
 
@@ -88,6 +89,9 @@ return cardMain
                     buy3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (buy4.innerText === '' && searchResStr[0] != undefined) {
                         buy4.appendChild(cardPop(parsedSearch, searchResStr))}
+                        
+
+                        getDelete()
     }
 
 
@@ -101,6 +105,8 @@ return cardMain
                     sell3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (sell4.innerText === '' && searchResStr[0] != undefined) {
                         sell4.appendChild(cardPop(parsedSearch, searchResStr))}
+
+                        getDelete()
     }
     function appendHold(parsedSearch, searchResStr){
     
@@ -112,6 +118,8 @@ return cardMain
                     hold3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (hold4.innerText === '' && searchResStr[0] != undefined) {
                         hold4.appendChild(cardPop(parsedSearch, searchResStr))}
+
+                        getDelete()
     }
     function appendWatch(parsedSearch, searchResStr){
      
@@ -123,6 +131,8 @@ return cardMain
                     watch3.appendChild(cardPop(parsedSearch, searchResStr))}
                     else if (watch4.innerText === '' && searchResStr[0] != undefined){
                         watch4.appendChild(cardPop(parsedSearch, searchResStr))}
+
+                        getDelete()
 
 
     }
