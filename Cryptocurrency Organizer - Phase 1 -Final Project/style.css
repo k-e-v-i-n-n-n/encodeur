@@ -1,26 +1,30 @@
 .mediaViewInfo {
-    /* --web-view-name: Web 1920 – 1; */
-    --web-view-id: CRYPTOCURRENCY Organize;
+
+    --web-view-id: CRYPTOCURRENCY Organizer;
     --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
 }
 :root {
-    --web-view-ids: CRYPTOCURRENCY Organize;
+    --web-view-ids: CRYPTOCURRENCY Organizer;
 }
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
-}
-#Web_1920__1 {
+} */
+.container {
+
+    /* max-width: 960px; */
+    margin: 0 auto;
     position: absolute;
-    width: 1920px;
+    left: 100px;
+    width: 1800px;
     height: 1080px;
     background-color: rgba(255,255,255,1);
-    overflow: hidden;
-    --web-view-name: Web 1920 – 1;
-    --web-view-id: CRYPTOCURRENCY Organize;
+    overflow: auto;
+    --web-view-name: CRYPTOCURRENCY Organizer;
+    --web-view-id: CRYPTOCURRENCY Organizer;
     --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
 }
@@ -39,11 +43,11 @@
     overflow: visible;
     width: 652px;
     height: 111px;
-    left: 634px;
+    left: 334px;
     top: 30px;
 }
 #CRYPTOCURRENCY_ {
-    left: 671px;
+    left: 371px;
     top: 31px;
     position: absolute;
     overflow: visible;
@@ -57,7 +61,7 @@
     color: rgba(0,0,0,1);
 }
 #A_daily_crypto_organizer {
-    left: 846px;
+    left: 546px;
     top: 105px;
     position: absolute;
     overflow: visible;
@@ -74,7 +78,7 @@
     position: absolute;
     width: 104px;
     height: 60px;
-    left: 731px;
+    left: 431px;
     top: 298px;
     overflow: visible;
     
@@ -100,7 +104,7 @@
     position: absolute;
     width: 104px;
     height: 60px;
-    left: 849px;
+    left: 549px;
     top: 298px;
     overflow: visible;
 }
@@ -125,7 +129,7 @@
     position: absolute;
     width: 104px;
     height: 60px;
-    left: 967px;
+    left: 667px;
     top: 298px;
     overflow: visible;
 }
@@ -160,7 +164,7 @@
     position: absolute;
     width: 104px;
     height: 60px;
-    left: 1085px;
+    left: 785px;
     top: 298px;
     overflow: visible;
 }
@@ -201,7 +205,7 @@
     overflow: visible;
     width: 652px;
     height: 33px;
-    left: 634px;
+    left: 334px;
     top: 154px;
     
 }
@@ -219,7 +223,7 @@
     overflow: visible;
     width: 652px;
     height: 91px;
-    left: 634px;
+    left: 334px;
     top: 197px;
 }
 #COLUMNS {
@@ -227,7 +231,7 @@
     position: absolute;
     width: 320px;
     height: 619px;
-    left: 314px;
+    left: 014px;
     top: 426px;
     overflow: visible;
 }
@@ -258,7 +262,7 @@
     position: absolute;
     width: 320px;
     height: 619px;
-    left: 650px;
+    left: 350px;
     top: 426px;
     overflow: visible;
 }
@@ -289,7 +293,7 @@
     position: absolute;
     width: 320px;
     height: 619px;
-    left: 986px;
+    left: 686px;
     top: 426px;
     overflow: visible;
 }
@@ -320,7 +324,7 @@
     position: absolute;
     width: 320px;
     height: 619px;
-    left: 1322px;
+    left: 1022px;
     top: 426px;
     overflow: visible;
 }
@@ -421,7 +425,7 @@
 #buy1 {
 
     position: relative;
-    left: 334px;
+    left: 34px;
     top: 444px;
 
 }
@@ -429,13 +433,13 @@
 #buy2 {
 
     position: absolute;
-    left: 334px;
+    left: 34px;
     top: 592px;
 }
 
 #buy3 {
     position: absolute;
-    left: 334px;
+    left: 34px;
     top: 742px;
 
     
@@ -444,61 +448,61 @@
 #buy4 {
 
     position: absolute;
-    left: 334px;
+    left: 34px;
     top: 890px;
 }
 
 #sell1 {
    
     position: absolute;
-    left: 671px;
+    left: 371px;
     top: 444px;
 }
 
 
 #sell2 {
     position: absolute;
-    left: 671px;
+    left: 371px;
     top: 592px;
 
 }
 
 #sell3 {
     position: absolute;
-    left: 671px;
+    left: 371px;
     top: 742px;
 }
 
 #sell4 {
     position: absolute;
-    left: 671px;
+    left: 371px;
     top: 890px;
 }
 
 
 #hold1 {
     position: absolute;
-    left: 1005px;
+    left: 705px;
     top: 444px;
 }
 
 #hold2 {
     position: absolute;
-    left: 1005px;
+    left: 705px;
     top: 592px;
 
 }
 
 #hold3 {
     position: absolute;
-    left: 1005px;
+    left: 705px;
     top: 742px;
     
 }
 
 #hold4 {
     position: absolute;
-    left: 1005px;
+    left: 705px;
     top: 890px;
    
 }
@@ -506,24 +510,24 @@
 #watch1 {
    
     position: absolute;
-    left: 1342px;
+    left: 1042px;
     top: 444px;
 }
 #watch2 {
     position: absolute;
-    left: 1342px;
+    left: 1042px;
     top: 592px;
 }
 #watch3 {
     position: absolute;
    
-    left: 1342px;
+    left: 1042px;
     top: 742px;
     
 }
 #watch4 {
     position: absolute;
-    left: 1342px;
+    left: 1042px;
     top: 890px;
   
 }
@@ -531,7 +535,7 @@
 
 
 #CurrencyResults {
-    left: 915px;
+    left: 615px;
     top: 202px;
     position: absolute;
     overflow: visible;
@@ -549,7 +553,7 @@
 
 
 #PriceResults {
-    left: 690px;
+    left: 390px;
     top: 250px;
     position: absolute;
     overflow: visible;
@@ -563,7 +567,7 @@
     color: rgba(0,0,0,1);
 }
 #RankResults {
-    left: 940px;
+    left: 640px;
     top: 250px;
     position: absolute;
     overflow: visible;
@@ -578,7 +582,7 @@
 }
 
 #DayChangeResults {
-    left: 1100px;
+    left: 800px;
     top: 250px;
     position: absolute;
     overflow: visible;
@@ -607,7 +611,7 @@
     overflow: visible;
     width: 320px;
     height: 45px;
-    left: 314px;
+    left: 14px;
     top: 372px;
 }
 #Rectangle_10 {
@@ -622,9 +626,9 @@
 .Rectangle_10 {
     position: absolute;
     overflow: visible;
-    width: 320px;
+    width: 20px;
     height: 45px;
-    left: 648px;
+    left: 348px;
     top: 373px;
 }
 #Rectangle_11 {
@@ -641,7 +645,7 @@
     overflow: visible;
     width: 320px;
     height: 45px;
-    left: 1322px;
+    left: 1022px;
     top: 372px;
 }
 #Rectangle_12 {
@@ -658,11 +662,11 @@
     overflow: visible;
     width: 320px;
     height: 45px;
-    left: 986px;
+    left: 686px;
     top: 373px;
 }
 #Buy {
-    left: 456px;
+    left: 156px;
     top: 385px;
     position: absolute;
     overflow: visible;
@@ -676,7 +680,7 @@
     color: rgba(0,0,0,1);
 }
 #Sell {
-    left: 786px;
+    left: 486px;
     top: 385px;
     position: absolute;
     overflow: visible;
@@ -690,7 +694,7 @@
     color: rgba(0,0,0,1);
 }
 #Hold {
-    left: 1132px;
+    left: 832px;
     top: 385px;
     position: absolute;
     overflow: visible;
@@ -704,7 +708,7 @@
     color: rgba(0,0,0,1);
 }
 #Watch {
-    left: 1477px;
+    left: 1177px;
     top: 385px;
     position: absolute;
     overflow: visible;
